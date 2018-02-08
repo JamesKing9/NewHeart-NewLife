@@ -1,0 +1,3 @@
+Trade Secrets
+
+Cavanaugh's plans to reconnect with his 14-year-old son are interrupted when the team and the crowd identify a fugitive domestic terrorist on the loose; Tanner and Sara's ongoing legal troubles drive a wedge between them, with Mike trapped in the middle; Alex confronts Tanner about the Congressional investigation; the team loses control of the crowd, with potentially deadly consequences. 

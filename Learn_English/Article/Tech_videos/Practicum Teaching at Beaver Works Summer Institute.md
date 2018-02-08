@@ -1,0 +1,18 @@
+# Practicum Teaching at Beaver Works Summer Institute
+
+> ![img](https://yt3.ggpht.com/-Dt7A30J7dTg/AAAAAAAAAAI/AAAAAAAAAAA/G8CK9UWf_F8/s88-c-k-no-mo-rj-c0xffffff/photo.jpg)
+>
+> [TeachingExcellence MIT](https://www.youtube.com/channel/UCF9W8iHEBwJgGQet9FWM00A)      
+>
+> Published on Oct 27, 2017
+
+## About me
+
+I'm Melanie chen. I'm a computer science major at MIT and I'm interning with Lincoln Labs this summer. Part of my internship has been helping to prototype and to help design the curriculum for the Beaver Works Summer Institute, specifically for Cog*Works.
+
+In `Cog*Works`, high school students are taught various applications of machine learning. We are essentially building up towards helping them develop their own autonomous cognitive assistants, sort of like *Siri* or *Alexa* . We gave each team an `Echo Dot` from **Amazon**, so they've been able to actually see how speech-to-text processing, when done right, can work really well, and they've been able to program their Echoes to have various skills. So every time we give a lecture, we always give some sort of exercise so they can implement what they just learned, so it's very hands-on. Because they get to fiddle around with it, and actually see the results so quickly, that's what really makes it more rewarding and more significant. 
+
+`Cog*Works` is one of three classes hosted by the *Summer Institute*. We also have Racecar and UAV. All three classes have a different structure. So Racecars and UAVs will try to complete a course based on recognition of these different signs that they have placed along the courses for both UAVs and Racecars. For Cognitive Assistants, it's less of a race and a little bit more of like a startup pitch, where the students will be able to pitch the skills that they have developed and whatever software that they have made over the course of this final week. As a TA(teaching assistant) for the class, I go around the classroom, whenever someone asks me a question, then I'm there to answer and do my best to help. The most difficult part about that, the challenge, was to really project myself as what I would want to see in a mentor. Being able to listen to the students and really understand what problems they're having, and being able to communicate how to approach it, has been something that I have been working on. They're all very bright kids, very enthusiastic, very passionate about the stuff they're doing. They come from all across the nation, with all different backgrounds, but they're all working together on these different projects, and that sort of openness about where you are, what you know, and not being afraid to say where you're confused has been very important. And that's part of how the students have grown so much. 
+
+When I was in high school, I really needed advice and mentorship. Sometimes you really want genuine, firsthand advice from someone who's been through it. Many of these kids are about to start applying for colleges, and they're entering a really stressful time of high school, so even if it's just life advice I think it makes it really worthwhile to be able to help them out in any way I can. I've grown pretty attached to these kids after these few weeks teaching them and working with them. Util you're in that room for four weeks with this tight-knit community, you don't really get to see the actual effects that your work has on other people. That's what has made my internship worthwhile for me, seeing how much these kids have grown since the first day, seeing their passion for machine learning grow, and their understanding really just soar. Seeing that sort of growth has been really meaningful for me. 
+
