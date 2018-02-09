@@ -29,13 +29,13 @@ Cover:
 
 
 
-##### Try It Out:  "Your First Linux C Program"
+######  Try It Out 'Your First Linux C Program'
 
 In this example, you start developing for Linux using C by writing, compiling, and running your first Linux program. It might as well as be that most famous of all starting points, **Hello World**.
 
 Here's the source code for the file `hello.c`:
 
-```c
+```c++
 #include <stdio.h>
 #include <stdlib.h>
 
@@ -163,13 +163,16 @@ Notice that the environment is local only to the program. Changes that you make 
 
 # 5：Terminals
 
+
+
 ## 5.1 Reading from and Writing to the Terminal
 
 In **Chapter 3**, you learned that when a program is invoked from the command prompt, the shell arranges for the standard input and output streams to be connected to your program. You should be able to interact with the user simply by using the `getchar` and `printf` routines to read and write these default streams.
 
 In the following **Try It Out**, you try to rewrite the menu routines in C, using just those two routines, in a program called `menu1.c`.
 
-**Try It Out Menu Routines in C**
+###### Try It Out ‘Menu Routines in C’
+
 ```c++
 // 1. Start with the following lines, which define the array to // be used as a menu, and prototype the `getchoice` function:
 #include <stdio.h>
