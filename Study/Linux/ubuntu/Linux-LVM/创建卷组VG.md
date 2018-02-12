@@ -155,13 +155,10 @@ Disk identifier: 0x00000000
 ```shell
 [root@getlnx20 ~]# fdisk /dev/sdb
 Device contains neither a valid DOS partition table, nor Sun, SGI or OSF disklabel
-
 Building a new DOS disklabel with disk identifier 0xaa12f277.
 Changes will remain in memory only, until you decide to write them.
 After that, of course, the previous content won't be recoverable.
-
 Warning: invalid flag 0x0000 of partition table 4 will be corrected by w(rite)
-
 WARNING: DOS-compatible mode is deprecated. It's strongly recommended to
          switch off the mode (command 'c') and change display units to
          sectors (command 'u').
