@@ -91,7 +91,6 @@
 
 [root@getlnx20 ~]# df -h
 Filesystem            Size  Used Avail Use% Mounted on
-
 /dev/mapper/VolGroup00-lv_root	31G  2.5G   27G   9% /
 tmpfs                 3.9G     0  3.9G   0% /dev/shm
 /dev/sda1             477M   33M  419M   8% /boot
@@ -99,7 +98,9 @@ tmpfs                 3.9G     0  3.9G   0% /dev/shm
 [root@getlnx20 ~]# 
 ```
 
-新增一块硬盘后，使用fdisk -l命令，我们可以看到这块新增的硬盘被标记为/dev/sdb
+
+
+新增一块硬盘后，使用fdisk -l命令，我们可以看到这块新增的硬盘被标记为`/dev/sdb`
 
 ```shell
 [root@getlnx20 ~]# fdisk -l

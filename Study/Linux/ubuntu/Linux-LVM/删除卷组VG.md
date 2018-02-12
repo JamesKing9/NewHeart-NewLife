@@ -10,51 +10,23 @@ origin from: [Linux LVM学习总结——删除卷组VG](http://www.cnblogs.com/
 [root@getlnx01uat ~]# df -h
 
 Filesystem            Size  Used Avail Use% Mounted on
-
-/dev/mapper/VolGroup00-LogVol00
-
-                       97G   36G   57G  39% /
-
-/dev/mapper/VolGroup01-LogVol00
-
-                       79G   33G   43G  44% /u01
-
-/dev/mapper/VolGroup02-LogVol00
-
-                      197G  182G  5.4G  98% /u02
-
-/dev/mapper/VolGroup03-LogVol00
-
-                      197G   57G  130G  31% /u03
-
-/dev/mapper/VolGroup04-LogVol00
-
-                      138G  118G   14G  90% /u04
-
-/dev/mapper/VolGroup05-LogVol00
-
-                      178G   48G  121G  29% /u05
-
+/dev/mapper/VolGroup00-LogVol00 97G   36G   57G  39% /
+/dev/mapper/VolGroup01-LogVol00 79G   33G   43G  44% /u01
+/dev/mapper/VolGroup02-LogVol00 197G  182G  5.4G  98% /u02
+/dev/mapper/VolGroup03-LogVol00 197G   57G  130G  31% /u03
+/dev/mapper/VolGroup04-LogVol00 138G  118G   14G  90% /u04
+/dev/mapper/VolGroup05-LogVol00 178G   48G  121G  29% /u05
 /dev/sda1              99M   23M   71M  25% /boot
-
 tmpfs                 2.0G     0  2.0G   0% /dev/shm
 
 [root@getlnx01uat ~]# vgscan
-
   Reading all physical volumes.  This may take a while...
-
   Found volume group "VolGroup05" using metadata type lvm2
-
   Found volume group "VolGroup04" using metadata type lvm2
-
   Found volume group "VolGroup03" using metadata type lvm2
-
   Found volume group "VolGroup02" using metadata type lvm2
-
   Found volume group "VolGroup01" using metadata type lvm2
-
   Found volume group "VolGroup00" using metadata type lvm2
-
 [root@getlnx01uat ~]# 
 ```
 
@@ -172,15 +144,13 @@ tmpfs                 2.0G     0  2.0G   0% /dev/shm
 
 
 
-3：删除逻辑卷LV
+## 3：删除逻辑卷LV
+
 ```shell
 
 [root@getlnx01uat ~]# lvremove /dev/VolGroup05/LogVol00
-
 Do you really want to remove active logical volume LogVol00? [y/n]: y
-
   Logical volume "LogVol00" successfully removed
-
 [root@getlnx01uat ~]# 
 ```
 
@@ -194,7 +164,6 @@ Do you really want to remove active logical volume LogVol00? [y/n]: y
 
 ```shell
 [root@getlnx01uat ~]# vgremove VolGroup05 
-
   Volume group "VolGroup05" successfully removed
 
 [root@getlnx01uat ~]# 
@@ -202,42 +171,20 @@ Do you really want to remove active logical volume LogVol00? [y/n]: y
 如果采用安全的方式删除卷组VG，则必须使用vgchange -a n VolGroup05关闭了vg_name，然后才可以删除它。
 ```shell
 [root@getlnx01uat ~]# vgchange -a n VolGroup05
-
   0 logical volume(s) in volume group "VolGroup05" now active
 
 [root@getlnx01uat ~]# vgremove VolGroup05 
-
   Volume group "VolGroup05" successfully removed
 ```
 验证卷组（VG）是否删除
 ```shell
 [root@getlnx01uat ~]# vgscan
-
- 
-
-Reading all physical volumes. This may take a while...
-
- 
-
-Found volume group "VolGroup04" using metadata type lvm2
-
- 
-
-Found volume group "VolGroup03" using metadata type lvm2
-
- 
-
+	Reading all physical volumes. This may take a while...
+ Found volume group "VolGroup04" using metadata type lvm2
+ Found volume group "VolGroup03" using metadata type lvm2
 Found volume group "VolGroup02" using metadata type lvm2
-
- 
-
 Found volume group "VolGroup01" using metadata type lvm2
-
- 
-
 Found volume group "VolGroup00" using metadata type lvm2
-
- 
 
 [root@getlnx01uat ~]# 
 ```
@@ -246,25 +193,17 @@ Found volume group "VolGroup00" using metadata type lvm2
 
 ## 5：删除物理卷PV
 
-```
+```shell
 [root@getlnx01uat ~]# pvremove /dev/sdg5  
-
   Labels on physical volume "/dev/sdg5" successfully wiped
 
 [root@getlnx01uat ~]# pvscan
-
   PV /dev/sde5   VG VolGroup04   lvm2 [139.97 GB / 0    free]
-
   PV /dev/sdd5   VG VolGroup03   lvm2 [199.97 GB / 0    free]
-
   PV /dev/sdc5   VG VolGroup02   lvm2 [199.97 GB / 0    free]
-
   PV /dev/sdb5   VG VolGroup01   lvm2 [79.97 GB / 0    free]
-
   PV /dev/sda2   VG VolGroup00   lvm2 [51.88 GB / 0    free]
-
   PV /dev/sdf5   VG VolGroup00   lvm2 [59.97 GB / 0    free]
-
   Total: 6 [731.72 GB] / in use: 6 [731.72 GB] / in no VG: 0 [0   ]
 ```
 
