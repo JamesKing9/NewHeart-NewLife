@@ -188,11 +188,8 @@ Syncing disks.
   Physical volume "/dev/sdb1" successfully created
 
 [root@getlnx20 ~]# pvscan
-
   PV /dev/sda2   VG VolGroup00   lvm2 [39.51 GiB / 0    free]
-
   PV /dev/sdb1                   lvm2 [80.00 GiB]
-
   Total: 2 [119.51 GiB] / in use: 1 [39.51 GiB] / in no VG: 1 [80.00 GiB]
 ```
 
